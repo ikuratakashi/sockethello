@@ -11,8 +11,11 @@ server.on('request', function(req,res){
             res.writeHead(500);
             return res.end('Error loading client.html');
         }
+
+
+        
         res.writeHead(200,{
-            'Content-Type' : 'text/html; charset=UTF-8'
+            'Content-Type':'text/html; charset=UTF-8'
         });
         res.end(data);
     });
