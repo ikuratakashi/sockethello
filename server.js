@@ -13,8 +13,7 @@ server.on('request', function(req,res){
         }
 
         //コメント
-
-        res.writeHead(
+        res.head(
             'Content-Type','text/html; charset=UTF-8'
         );
         res.end(data);
