@@ -14,9 +14,9 @@ server.on('request', function(req,res){
 
         //コメント
 
-        res.writeHead(200,{
-            'Content-Type':'text/html; charset=UTF-8'
-        });
+        res.writeHead(
+            'Content-Type','text/html; charset=UTF-8'
+        );
         res.end(data);
     });
 });
