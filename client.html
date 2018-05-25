@@ -6,7 +6,7 @@
         <script>
             $(document).ready(function(){
             //コネクションの作成
-            var socket = io.connect();
+            var socket = io.connect('/namesptest');
             //greeting イベントを受診したら、その内容を表示する
             socket.on('greeting',function(data,fn){
                 var answer = confirm(data.message);

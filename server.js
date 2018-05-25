@@ -20,7 +20,8 @@ server.listen(8080);
 
 //リクエスト受診時の処理
 var io = require('socket.io').listen(server);
-io.sockets.on('connection',function(socket){
+var control = io.of('/namesptest');
+control.on('connection',function(socket){
     //greeting イベントを発生させる
     socket.emit('greeting',{message:'hello,  '}, function (data){
         console.log('request:   ' + data);
