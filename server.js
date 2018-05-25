@@ -12,8 +12,8 @@ server.on('request', function(req,res){
             return res.end('Error loading client.html');
         }
 
+        //コメント
 
-        
         res.writeHead(200,{
             'Content-Type':'text/html; charset=UTF-8'
         });
